@@ -1,0 +1,76 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 62.5%; /* 1 rem = 10px */
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* UTILIDADES */
+.container {
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #ffcc00a4;
+  z-index: 1000;
+}
+.top-logo {
+  display: flex;
+  align-items: center;
+  flex-basis: calc(33.3% - 1rem);
+}
+.top-logo img {
+  margin-left: 10px;
+  margin-top: 8px;
+  width: 110px;
+}
+
+.navigation {
+  display: none;
+  flex-basis: calc(33.3% - 1rem);
+}
+
+.navigation ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+.navigation li a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-basis: calc(33.3% - 1rem);
+}
+.social-links img {
+  width: 30px;
+}
+
+.header-background {
+  height: 800px;
+  background-image: url('/img/header-photo-phone.jpg');
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
